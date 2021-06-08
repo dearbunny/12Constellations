@@ -13,6 +13,7 @@
 		9AF46DA2266E0D770078F45A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF46DA0266E0D770078F45A /* Main.storyboard */; };
 		9AF46DA4266E0D790078F45A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF46DA3266E0D790078F45A /* Assets.xcassets */; };
 		9AF46DA7266E0D790078F45A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF46DA5266E0D790078F45A /* LaunchScreen.storyboard */; };
+		9AFD9BF4266F09AB0000CC79 /* Constellation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD9BF3266F09AB0000CC79 /* Constellation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9AF46DA3266E0D790078F45A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AF46DA6266E0D790078F45A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AF46DA8266E0D790078F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AFD9BF3266F09AB0000CC79 /* Constellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constellation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9AF46D9A266E0D770078F45A /* AppDelegate.swift */,
 				9AF46D9C266E0D770078F45A /* SceneDelegate.swift */,
 				9AF46D9E266E0D770078F45A /* ViewController.swift */,
+				9AFD9BF3266F09AB0000CC79 /* Constellation.swift */,
 				9AF46DA0266E0D770078F45A /* Main.storyboard */,
 				9AF46DA3266E0D790078F45A /* Assets.xcassets */,
 				9AF46DA5266E0D790078F45A /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF46D9F266E0D770078F45A /* ViewController.swift in Sources */,
+				9AFD9BF4266F09AB0000CC79 /* Constellation.swift in Sources */,
 				9AF46D9B266E0D770078F45A /* AppDelegate.swift in Sources */,
 				9AF46D9D266E0D770078F45A /* SceneDelegate.swift in Sources */,
 			);
