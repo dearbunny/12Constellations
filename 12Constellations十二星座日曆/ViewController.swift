@@ -143,15 +143,8 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     }
     //換圖
     func zodiac() {
+
         
-        //let zodiacText = constellations[1].name
-        if constellations[0].image == "牡羊" {
-            zodiacImageView.image = UIImage(named: "牡羊")
-        }
-        for i in constellations {
-            
-            print(i)
-        }
     }
 
 
