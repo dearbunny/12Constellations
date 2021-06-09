@@ -129,7 +129,9 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         default:
             break
         }
+        
         return constellations[row].image
+        
         
         
     }
