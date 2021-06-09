@@ -38,8 +38,6 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //zodiac()
         updateUI()
     }
     
@@ -84,17 +82,25 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         
     }
     
-    // 委任 PickerView Delegate和DataSource的function
+    // 委任 PickerView Delegate和DataSource的function，有幾個滾輪
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
+    // Picker View 每個滾輪有幾筆資料
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return constellations.count
     }
     
+    
+    // Picker View 內每筆資料的實際內容。
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
+        return constellations[row].name
+    }
+    
+    // 使用者選到什麼選項，就執行這個方法 --> 取得星座換圖
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // 改變第一列時
         switch constellations[row].image {
         case "牡羊":
             zodiacImageView.image = UIImage(named: "牡羊")
@@ -123,10 +129,9 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         default:
             break
         }
+        return constellations[row].image
         
-
         
-        return constellations[row].name
     }
     
     // 農曆轉換
@@ -141,11 +146,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         lunarLabel.text = "農曆：" + dateString
         //print(dateString)
     }
-    //換圖
-    func zodiac() {
-
-        
-    }
+    
 
 
 }
